@@ -5,6 +5,7 @@ import Desktopnav from '../components/Desktopnav.vue';
 import Searchbar from '../components/searchbar.vue';
 import CollectionCard from '../components/collectionCard.vue';
 import TailorCard from '../components/tailorCard.vue';
+import Mobilenav from '@/components/Mobilenav.vue'
 
 </script>
 <template>
@@ -19,6 +20,7 @@ import TailorCard from '../components/tailorCard.vue';
     <CollectionCard/>
     <TailorCard/>
   </div>
+  <Mobilenav/>
 </template>
 <style>
 @import '@/style/home.css';
