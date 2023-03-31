@@ -82,7 +82,7 @@ const setSignIn = () => {
       :style="{ backgroundImage: `url(${defaultImage})` }"
     >
       <div class="mobile-show">
-        <div class="ads-txt">
+        <div class="ads-txt-x">
           <h1>Custom tailor design</h1>
         </div>
         <div class="welcome-btn-container">
