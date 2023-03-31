@@ -9,7 +9,7 @@
   }
 
   .tailor-c {
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     display: flex;
     min-width: 400px;
@@ -20,7 +20,7 @@
   }
 
   .tailor-img {
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: 12px;
     background-size: cover;

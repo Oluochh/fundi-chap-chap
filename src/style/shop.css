@@ -3,13 +3,17 @@
         gap: 20px;
         height: 100%;
         padding: 10px;
-        display: flex;
         flex-direction: column;
+    }
+
+    .shop-s {
+        padding: 20px 0;
     }
 
     .categories-inner {
         gap: 10px;
         display: flex;
+        padding: 20px 0;
         flex-direction: column;
     }
 
