@@ -1,4 +1,5 @@
 <script setup>
+import { ref , computed} from 'vue'
 import { useRouter } from 'vue-router'
 import likeIcon from '../icons/likeIcon.vue'
 import starsIcon from '../icons/star.vue'
@@ -13,6 +14,9 @@ const collection = () => {
 const tailorStore = useTailorStore()
 
 const data = tailorStore.Tailor
+// const rating = computed(() => {
+//     return Math.floor(Math.random() * data.length);
+//   })
 </script>
 <template>
   <div class="tailor-card">

@@ -19,7 +19,7 @@ images = [
 
 setInterval(() => {
   defaultImage.value = images[Math.floor(Math.random() * images.length)].image;
-}, 5000);
+}, 100000);
 
 
 </script>

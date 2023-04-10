@@ -7,7 +7,7 @@
     --star-color: rgb(254, 229, 6);
     --dark-color:  rgb(211, 212, 215);
     --light-color: rgb(249, 249, 249);
-    --primary-color: rgb(5, 159, 165);
+    --primary-color: rgb(5, 160, 166);
     --secondary-color: rgb(255, 110, 78);
     --background-color: rgb(255, 255, 255);
     --primary-light-color: rgb(118, 186, 185);
@@ -74,6 +74,11 @@
   display: flex;
 }
 
+.desk-simp {
+  display: none;
+}
+
+
 
   .open {
     height: fit-content;
@@ -86,6 +91,13 @@
 /* using it as global style for larger devices  */
 @media only screen and (min-width: 48em) {
 
+  .desk-simp {
+    display: flex;
+  }
+
+  .nav-simp {
+    display: none;
+  }
     /* Works on Chrome, Edge, and Safari */
 /* *::-webkit-scrollbar {
   width: 15px;

@@ -1,12 +1,12 @@
 <script setup>
-import { watchEffect, ref } from "vue";
-import { useRouter } from "vue-router";
-import { useAuthStore } from "@/stores/auth";
+import { watchEffect, ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
+import loading from '@/icons/loading.vue'
 
-const authStore = useAuthStore();
-const router = useRouter();
-const interval = ref(null);
-
+const authStore = useAuthStore()
+const router = useRouter()
+const interval = ref(null)
 
 watchEffect(() => {
   interval.value = authStore.timeOut;
@@ -23,13 +23,12 @@ watchEffect(() => {
       break;
   }
 });
-
 </script>
 <template>
   <div class="splash">
-    <h1>Fundi chap chap</h1>
+      <loading class="loading" />
   </div>
 </template>
 <style>
-@import "@/style/splash.css";
+@import '@/style/splash.css';
 </style>

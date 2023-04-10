@@ -54,7 +54,7 @@ watchEffect(() => {
 
 });
 
-// change background image every 5 sec
+// change background image every 30 sec
 images = [
   {
     image: show1,
@@ -69,7 +69,7 @@ images = [
 
 setInterval(() => {
   defaultImage.value = images[Math.floor(Math.random() * images.length)].image;
-}, 5000);
+}, 30000);
 
 const setSignIn = () => {
   DrawerStore.toggleDrawer();

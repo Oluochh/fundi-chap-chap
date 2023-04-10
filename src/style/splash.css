@@ -1,11 +1,15 @@
 .splash {
     height: 100%;
     display: flex;
-    font-size: 1rem;
-    font-weight: 600;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    text-transform: capitalize;
     color: var(--background-color);
     background-color: var(--primary-color);
 }
+
+.loading {
+    width: 200px;  
+    fill: var(--background-color);
+}
+
