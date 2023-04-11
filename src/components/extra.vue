@@ -1,11 +1,11 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import addIcon from '../icons/add.vue'
-import measureIcon from '../icons/measure.vue'
-import fabricIcon from '../icons/fabric.vue'
-import scissorIcon from '../icons/scissor.vue'
-import tailorIcon from '../icons/tailor.vue'
-import clothIcon from '../icons/t-shirt.vue'
+import addIcon from '@/icons/add.vue'
+import measureIcon from '@/icons/measure.vue'
+import fabricIcon from '@/icons/fabric.vue'
+import scissorIcon from '@/icons/scissor.vue'
+import tailorIcon from '@/icons/tailor.vue'
+import clothIcon from '@/icons/t-shirt.vue'
 
 const router = useRouter()
 

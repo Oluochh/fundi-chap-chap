@@ -21,7 +21,7 @@ const Profile = () => {
       <RouterLink :to="{ name: 'Home' }" class="nav-link">Home</RouterLink>
       <RouterLink :to="{ name: 'Shop' }" class="nav-link">Shop</RouterLink>
       <RouterLink :to="{ name: 'Cart' }" class="nav-link">Cart</RouterLink>
-      <RouterLink :to="{ name: 'Profile' }" class="nav-link">Account</RouterLink>
+      <RouterLink :to="{ name: 'Settings' }" class="nav-link">Settings</RouterLink>
     </div>
     <div class="desk-f">
       <div class="notification-tag" @click="Notification()">

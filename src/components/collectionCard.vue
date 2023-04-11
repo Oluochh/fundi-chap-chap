@@ -9,6 +9,11 @@ const collection = () => {
   router.push({ name: 'Search' })
 }
 
+const detail = () => {
+  router.push({ name: 'Detail' })
+}
+
+
 const ProductStore = useProductStore()
 
 const data = ProductStore.Cloths
@@ -24,6 +29,7 @@ const data = ProductStore.Cloths
         class="card-c"
         v-for="({ productImage, productName, productPrice }, index) in data"
         :key="index"
+        @click="detail()"
       >
         <div class="card-img" :style="{ backgroundImage: `url(${productImage})` }">
           <div class="card-like">

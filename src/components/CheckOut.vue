@@ -1,14 +1,19 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+
 defineProps({
   subtotal: Number,
   delivery: Number,
 })
+  
+const router = useRouter();
 
 const btnTitle = ref('checkout')
 
 const pay = () => {
-    
+  router.push({ name: 'Payment' })
 }
 </script>
 <template>

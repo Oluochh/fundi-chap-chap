@@ -72,6 +72,10 @@
     background-color: var(--background-color);
   }
 
+  .likeIcon {
+    fill: var(--secondary-color);
+  }
+
   .card-info {
     gap: 2px;
     display: flex;

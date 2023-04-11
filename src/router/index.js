@@ -31,6 +31,18 @@ const router = createRouter({
     },
 
     {
+      path: '/payment',
+      name: 'Payment',
+      component: () => import('@/views/PaymentView.vue')
+    },
+
+    {
+      path: '/history',
+      name: 'History',
+      component: () => import('@/views/HistoryView.vue')
+    },
+
+    {
       path: '/search',
       name: 'Search',
       component: () => import('@/views/SearchView.vue')

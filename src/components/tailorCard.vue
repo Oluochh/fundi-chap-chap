@@ -11,6 +11,10 @@ const collection = () => {
   router.push({ name: 'Shop' })
 }
 
+const detail = () => {
+  router.push({ name: 'Detail' })
+}
+
 const tailorStore = useTailorStore()
 
 const data = tailorStore.Tailor
@@ -29,6 +33,7 @@ const data = tailorStore.Tailor
         class="tailor-c"
         v-for="({ profileImage, name, rating, rates }, index) in data"
         :key="index"
+        @click="detail()"
       >
         <div class="tailor-img" :style="{ backgroundImage: `url(${profileImage})` }"></div>
         <div class="tailor-info">

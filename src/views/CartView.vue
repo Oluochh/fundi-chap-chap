@@ -7,15 +7,17 @@ import Desktopnav from '@/components/Desktopnav.vue'
 import SimpleNav from '@/components/simpleNav.vue'
 import likeIcon from '@/icons/likeIcon.vue'
 import deleteIcon from "@/icons/delete.vue"
-import minusIcon from '../icons/minus.vue'
+import minusIcon from '@/icons/minus.vue'
 import starIcon from '@/icons/star.vue'
 import addIcon from '@/icons/add.vue'
+
 
 
 const itemNo = ref(1);
 const reviews = computed(() => {
   return Math.floor(Math.random() * 4)
 })
+
 
 const title = ref('Cart')
 
@@ -55,7 +57,7 @@ const Minus = () => {
         <div class="cart-rev">
           <div class="cart-star">
             <starIcon class="star-con" />
-            4.8
+            {{reviews}}
           </div>
         </div>
         <div class="cart-description">
@@ -84,7 +86,7 @@ const Minus = () => {
         </div>
         <CheckOut :subtotal="subtotal" :delivery="delivery" class="show-ds" />
       </div>
-    </div>
+    </div>  
   <CheckOut :subtotal="subtotal" :delivery="delivery" class="show-mb" />
   </div>
   <MobileNav />
